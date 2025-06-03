@@ -1,6 +1,6 @@
 # Aspire to Sort
 
-**Aspire to Sort** was a unioversity assignment on building a web-based educational tool built using HTML, CSS, and Bootstrap. It emulates teaching the fundamentals of sorting algorithms through text, videos, and interactive visuals.
+**Aspire to Sort** was a university assignment on building a web-based educational tool built using HTML, CSS, and Bootstrap. It emulates teaching the fundamentals of sorting algorithms through text, videos, and interactive visuals.
 
 ## 📁 Pages
 - **Home** – Overview and intro to sorting.
