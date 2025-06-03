@@ -1,0 +1,13 @@
+#imgHome {
+    height: 10cm;
+}
+
+#carouselHomePage .carousel-item {
+    object-fit: cover;
+    object-position: center;
+    height: 20cm;
+}
+
+#whiteFontChange {
+    color: white;
+}

@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aspire to Sort</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a href="Home.html" class="navbar-brand text-warning">Aspire to Sort</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Learning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Questions.html" class="nav-link">Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Links.html" class="nav-link">Other Helpful Resources</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sign-up -->
+    <section class="bg-primary text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 id="whiteFontChange" class="mb-3 mb-md-0">Sign Up For News About Our website</h3>
+
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Enter Email" />
+                    <button class="btn btn-dark btn-lg" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="false"
+                    aria-controls="collapseExample">Submit</button>
+                </div>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body text-dark">
+                        This would then submit email. However it's not working as that would require a backend.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Intro -->
+    <section class="bg-dark text-light">
+        <div class="container">
+            <div class="p-3 text-center align-items-center">
+                <h1>Welcome to the <span class="text-warning"> Learning Page</span></h1>
+                <p class="fs-3"><span class="text-warning">On this page there are images, videos and text specifically
+                        made and selected in order to improve your understanding of sorting algorithms.</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Text, images, and a video to do with sorting -->
+    <section class="bg-dark text-light">
+        <div class="container p-3">
+            <div class="text-center align-items-center">
+                <p class="fs-4">However, before we show you some different types of sorting algorithms
+                    here is some vital information on the challenges of creating an efficient
+                    sorting system and big O notation by <a href="https://www.youtube.com/c/TomScottGo">Tom Scott.</a>
+                </p>
+            </div>
+            <div class="ratio ratio-16x9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RGuJga2Gl_k"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; 
+                autoplay; 
+                clipboard-write; 
+                encrypted-media; 
+                gyroscope; 
+                picture-in-picture" allowfullscreen alt="Video by Tom Scott about sorting and big O notation">
+                </iframe>
+            </div>
+            <div class="text-center align-items-center p-3">
+                <p class="fs-4 p-1">
+                    Complex stuff right! Fortunately for you, understanding how big O notation
+                    works isn't needed in order to compare on average how fast a certain sorting
+                    algorithm is. Plenty of people have made lots of useful graphs and charts
+                    that will help you visualise it.
+                </p>
+                <img class="img-fluid" src="Photos/big-O.png" alt="Big-O-Notation graph">
+                <img class="img-fluid" src="Photos/big-O-2.png" alt="Big-O-Notation speed and space complexity">
+                <p class="fs-4 p-3">
+                    Though this table may look confusing it is actually quite simple to interpret
+                    using the graph above. Space complexity is how much memory the sorting method uses
+                    and time complexity is the amount of time it takes to run the algorithm.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Accordion containing sorting algorithm knowledge -->
+        <div class="container p-3">
+            <div class="accordion" id="accordionLearnPage">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            Bubble Sort
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body  fs-5">
+                            The bubble sort algorithm works by repeatedly going through a list of items,
+                            comparing consecutive pairs of items and swapping the items if they are in the wrong order.
+                            The algorithm is called bubble sort because when sorting a list from lowest to highest
+                            value,
+                            the highest values are moved up the list,
+                            which some people imagine as bubbles in a fizzy drink rising to the top.
+                            <ul class="p-3">
+                                <li>Each time the algorithm goes through the list, it is called a pass</li>
+                                <li>Each time a pair of items are checked to see if they are in the correct order, it is
+                                    called a comparison</li>
+                            </ul>
+                            The passes through the list are repeated until the items are sorted.
+                            On each pass, the highest value
+                            (or lowest, depending on the order that the items are being sorted into)
+                            is moved towards the end of the list.
+                            This process is repeated until the list is sorted.
+
+                            A bubble sort can be performed on a list of numbers,
+                            characters, or words (strings).
+                            In the examples on this page,
+                            items will be sorted into ascending order,
+                            from lowest to highest value.
+                            For the examples that use words,
+                            this means that the items will be sorted alphabetically (from A-Z) based on the character
+                            code.
+                            The data can also be sorted in descending order (highest to lowest) and,
+                            if this is the case,
+                            the algorithm will need to be adjusted to ensure that the correct order is achieved.<br><br>
+
+                            <div class="text-center align-items-center">
+                                <a
+                                    href="https://isaaccomputerscience.org/concepts/dsa_search_bubble?examBoard=all&stage=all&topic=sorting">Explanation
+                                    Text by issac CS</a>
+                            </div>
+
+                            <span class="text-success"><strong></strong></span>
+
+                            Example:<br>
+
+                            <span class="text-danger"><strong>20 13</strong></span> 2 9 70 31 --><span
+                                class="text-danger"><strong> 13 20</strong></span> 2 9 70 31 <br>
+
+                            13 <span class="text-success"><strong>20 2</strong></span> 9 70 31 --> 13 <span
+                                class="text-success"><strong>2 20</strong></span> 9 70 31 <br>
+
+                            13 2 <span class="text-primary"><strong>20 9</strong></span> 70 31 --> 13 2 <span
+                                class="text-primary"><strong>9 20</strong></span> 70 31 <br>
+
+                            13 2 9 <span class="text-info"><strong>20 70</strong></span> 31 --> 13 2 9 <span
+                                class="text-info"><strong>20 70</strong></span> 31 (No swap as 70 is bigger)<br>
+
+                            13 2 9 20 <span class="text-dark"><strong>70 31</strong></span> --> 13 2 9 20 <span
+                                class="text-dark"><strong>31 70</strong></span> <br>
+
+                            <span class="text-danger"><strong>13 2</strong></span> 9 20 31 70 --> <span
+                                class="text-danger"><strong>2 13</strong></span> 9 20 31 70 <br>
+
+                            2 <span class="text-success"><strong>13 9</strong></span> 20 31 70 --> 2 <span
+                                class="text-success"><strong>9 13</strong></span> 20 31 70<br><br>
+
+                            <div class="ratio ratio-16x9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/uJLwnsLn0_Q"
+                                    title="YouTube video player" frameborder="0" allow="accelerometer; 
+                                autoplay; 
+                                clipboard-write;
+                                encrypted-media; 
+                                gyroscope; 
+                                picture-in-picture" allowfullscreen alt="Video about bubble sorting">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            Merge Sort
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body  fs-5">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus nisi mollitia molestiae
+                            ducimus ratione dolor impedit eaque accusamus, excepturi illum sequi dolore voluptatibus
+                            modi in ipsam itaque facere qui consequuntur! Cumque doloribus suscipit velit atque maxime.
+                            Provident ut rem, qui nemo aperiam aspernatur aliquid laborum repellendus illum, dolores,
+                            eos vero doloribus eius possimus doloremque dicta architecto eaque inventore et in quo?
+                            Facere sapiente dolore, fugiat quisquam delectus dolor animi explicabo, odit provident rem
+                            dicta? Excepturi, cupiditate temporibus laudantium maxime quibusdam odit reprehenderit
+                            consequuntur architecto distinctio quae. Esse autem architecto fugit atque ducimus! Eligendi
+                            distinctio ea minus saepe odio? Blanditiis, aut dicta. <br><br>
+
+                            Example: <br><br>
+
+                            <div class="container">
+                                <div class="img-fluid">
+                                    <img class="w-100" src="Photos/VideoPlaceholder.png"
+                                        alt="placeholder for video about merge sort">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            Quick Sort
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body  fs-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem assumenda, vel, esse
+                            debitis facilis necessitatibus, earum accusamus ipsum harum deserunt amet ratione vitae
+                            cupiditate est. Sint libero maiores repellendus, aperiam facere molestiae unde? Voluptatum
+                            magnam nisi eligendi iusto in assumenda magni nemo, vel tempora laudantium, explicabo autem
+                            amet, cum quibusdam maiores quaerat! Corporis repellendus quisquam saepe qui inventore porro
+                            veniam perferendis, cum distinctio totam consectetur necessitatibus eius quae animi labore
+                            nihil ratione voluptatibus ex incidunt iusto maiores quis odio? Cumque voluptatum sint vero.
+                            Id officia eos, quas libero numquam dolor error! Nesciunt nostrum porro beatae sunt unde
+                            molestias iusto id quisquam. <br><br>
+
+                            Example: <br><br>
+
+                            <div class="container">
+                                <div class="img-fluid">
+                                    <img class="w-100" src="Photos/VideoPlaceholder.png"
+                                        alt="placeholder for video about quick sort">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">
+                This is a footer.<br> In the finished version it will contain important information such as email,
+                phone, social media <br>
+                As we don't have those yet this is filler text.
+            </p>
+
+            <a href="#" class="position-absoulute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
